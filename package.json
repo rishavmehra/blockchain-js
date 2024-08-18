@@ -1,0 +1,27 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Bitcoin like server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishavmehra/blockchain.git"
+  },
+  "keywords": [
+    "blockchain",
+    "nodejs",
+    "PoW"
+  ],
+  "author": "Rishav Mehra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishavmehra/blockchain/issues"
+  },
+  "homepage": "https://github.com/rishavmehra/blockchain#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
