@@ -4,7 +4,11 @@
   "description": "Bitcoin like server",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "start": "node index.js",
+    "dev": "npm run start-redis && nodemon index.js",
+    "dev-chain": "cross-env GENERATE_PEER_PORT='true' nodemon index.js",
+    "start-redis": "redis-server --daemonize yes"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,13 @@
   },
   "homepage": "https://github.com/rishavmehra/blockchain#readme",
   "dependencies": {
-    "jest": "^23.6.0"
+    "body-parser": "^1.20.2",
+    "cross-env": "^5.2.0",
+    "express": "^4.19.2",
+    "hex-to-binary": "^1.0.1",
+    "jest": "^23.6.0",
+    "nodemon": "^3.1.4",
+    "redis": "^2.8.0",
+    "request": "^2.88.0"
   }
 }
